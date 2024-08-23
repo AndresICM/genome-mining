@@ -71,13 +71,14 @@ Cytoscape is a software frequently used to visualize networks, such as BGC netwo
 ## Download the metabolomics dataset
 
 First, we need to go to Zenodo and download all the mzML raw data collected from the described strains.
+
    https://zenodo.org/api/records/13352458/files-archive
 
 After downloading the compressed file, we need to decompress it and store the files in a folder on our computer. 
 
-## Import the dataset, and use the batch file to analyze your data
+## Import the dataset and use the batch file to analyze your data
 
-This data was collected from crude extracts from two marine *Streptomyces*: *Streptomyces* sp. H-KF8, and *Streptomyces* sp. Vc74B-19. 
+This data was collected from crude extracts from two marine *Streptomyces*: *Streptomyces* sp. H-KF8, and *Streptomyces* sp. Vc74B-19. These strains were isolated by the lab of Dr. Beatriz Cámara in UTFSM, Valparaíso, Chile. 
 Two media were used, ISP2 and ISP2 prepared with artificial seawater (ASW), to evaluate the effect of replicating the natural environment from which these strains were isolated. 
 
 <a href="../fig/Datasets.png">
@@ -87,7 +88,7 @@ Two media were used, ISP2 and ISP2 prepared with artificial seawater (ASW), to e
 We downloaded 18 LC-MS/MS-derived files in mzML format. This data was collected by Dr. Mauricio Caraballo-Rodriguez in the Dorrestein Lab, at the University of California San Diego.
 There are files from each strain, in ISP2 and ISP2-ASW, besides the crude extracts from the culture media. The data is in triplicates.
 
-Besides mzML files, there is a file metadata_table.tsv, that contains all the relevant information from this dataset. 
+Besides mzML files, a file metadata_table.tsv contains all the relevant information from this dataset. 
 Includes the names of the samples, relevant data collection, and taxonomic information. 
 
 In addition, there is information relevant to the analysis, such as the names of the strains, the media used for culturing, and the antimicrobial activity. All this information is included in the format ATTRIBUTE_*
@@ -135,7 +136,7 @@ Select from your computer the 18 mzML files from this dataset
 </a>
 
 
-After this, every file should be included in the batch-processing mode. Select OK afterward so the files begin to process in the meantime.
+After this, every file should be included in batch processing mode. Select OK afterward so the files begin to process.
 
 
 <a href="../fig/batch_05.jpg">
@@ -144,7 +145,7 @@ After this, every file should be included in the batch-processing mode. Select O
 
 Briefly, MZMine is now detecting all the masses present in your samples, grouping them, and then aligning them, so you can know in which sample each detected spectrum is present
 
-You should note, that the parameters used are specific for this dataset, you might need to change some of the values when analyzing your own samples.
+You should note, that the parameters used are specific for this dataset, you might need to change some of the values when analyzing your samples.
 
 For more information: 
 Nothias, LF., Petras, D., Schmid, R. et al. Feature-based molecular networking in the GNPS analysis environment. Nat Methods 17, 905–908 (2020). https://doi.org/10.1038/s41592-020-0933-6 
@@ -272,7 +273,7 @@ Then, in your selected folder, you should have two files
   <img src="../fig/export_04.jpg" alt="Export files" width="600"/>
 </a>
 
-Now we need to repeat the export step but with the media blanks removed. This time the files will be named "GM_workshop_Featurelist_filtered" so we can know that there is no MS spectra that are originally from the culture media.
+Now we need to repeat the export step but with the media blanks removed. This time the files will be named "GM_workshop_Featurelist_filtered" so we can know that there are no MS spectra that are originally from the culture media.
 
 After this, we have 4 files. And we are done with the processing steps in MZMine 3
 
@@ -289,7 +290,7 @@ Then we should go to "Advanced Analysis Tools", and Select "Analyze" in the Feat
   <img src="../fig/FBMN_01.jpg" alt="FBMN" width="800"/>
 </a>
 
-Then we should write a title for our network. We could use something like "GM_workshop_FBMN_filtered", because we are going to use the feature list with the media blanks removed.
+Then we should write a title for our network. We could use something like "GM_workshop_FBMN_filtered" because we are going to use the feature list with the media blanks removed.
 
 Following that, in "File Selection", click on "Select Input File"
 
@@ -338,7 +339,7 @@ Finally, we are going to select the "metadata_table.tsv" as our "Sample Metadata
 </a>
 
 In the "Selected Files" section, we should be able to see the three files in their corresponding sections.
-Click on finish selection after checking everything is ok.
+Click on the finish selection after checking everything is ok.
 
 <a href="../fig/FBMN_09.jpg">
   <img src="../fig/FBMN_09.jpg" alt="FBMN" width="800"/>
@@ -445,7 +446,7 @@ Also, it is possible to observe that *Streptomyces* sp. H-KF8 metabolomic profil
   <img src="../fig/FBMN-STATS_09.jpg" alt="FBMN" width="800"/>
 </a>
 
-There are several statistics that you can do using FBMN STATS guide, you can check the preprint [here](https://doi.org/10.26434/CHEMRXIV-2023-WWBT0).
+There are several statistics that you can do using the FBMN STATS guide, you can check the preprint [here](https://doi.org/10.26434/CHEMRXIV-2023-WWBT0).
 
 
 ## Visualize the network using Cytoscape
@@ -463,11 +464,11 @@ Afterward, click on "Direct Cytoscape Preview/Download"
   <img src="../fig/cytoscape_02.jpg" alt="FBMN" width="600"/>
 </a>
 
-If your network is not Done, then we could use a previously computed network, that holds the same data that we used in this workshop
+If your network is not done, then we could use a previously computed network, that holds the same data that we used in this workshop
 
 [Cytoscape](https://cytoscape.gnps2.org/process?task=568cc93ed2e84f20b2b94bd186b48ee8#{})
 
-Click on "Download Cytoscape File", and save it in your computer
+Click on "Download Cytoscape File", and save it on your computer
 
 <a href="../fig/cytoscape_03.jpg">
   <img src="../fig/cytoscape_03.jpg" alt="FBMN" width="600"/>
